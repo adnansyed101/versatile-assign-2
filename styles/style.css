@@ -21,7 +21,71 @@ body {
   background-color: black;
 }
 
+li {
+  list-style: none;
+}
+
 /* Shared Classes */
+.flex {
+  display: flex;
+}
+
 .subtitle {
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* Header */
+header {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+/* Nav */
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+nav h3 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2.5rem;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 10px 20px;
+  border-radius: 3rem;
+  margin: 10px;
+}
+
+nav ul li:first-child {
+  background-color: var(--primary-color);
+}
+
+.bar-icon {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  /* Header */
+  header {
+    width: 90%;
+  }
+  /* Nav */
+  nav ul {
+    display: none;
+  }
+
+  .bar-icon {
+    display: block;
+  }
 }
