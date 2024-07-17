@@ -5,6 +5,10 @@
   src: url("../fonts/miama/Miama.ttf");
 }
 
+:root {
+  --primary-color: #e6533c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +19,9 @@
 
 body {
   background-color: black;
+}
+
+/* Shared Classes */
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
 }
