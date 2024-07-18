@@ -16,6 +16,7 @@
   box-sizing: border-box;
   color: white;
   font-family: "Inter", sans-serif;
+  list-style: none;
 }
 
 body {
@@ -26,13 +27,9 @@ body {
   /* Don't put the above two lines in production */
 }
 
-li {
-  list-style: none;
-}
-
 button {
   padding: 16px 70px;
-  border-radius: 42px;
+  border-radius: 40px;
   font-size: 1.25rem;
 }
 
@@ -43,7 +40,7 @@ button {
 
 .subtitle {
   color: var(--subtitle-text);
-  margin: 28px 0;
+  margin: 21px 0;
 }
 
 .primary-button {
@@ -54,6 +51,11 @@ button {
 .secondary-button {
   background-color: black;
   border: 1px solid white;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
 }
 
 /* Header */
@@ -119,6 +121,10 @@ nav ul li:first-child {
   position: relative;
 }
 
+.banner-img img {
+  width: 100%;
+}
+
 .free-video,
 .tutorial-video {
   position: absolute;
@@ -158,6 +164,36 @@ nav ul li:first-child {
   background-color: var(--primary-color);
   border-radius: 50%;
   padding: 15px;
+}
+
+/* Habits Section */
+#habits {
+  text-align: center;
+}
+
+#habits h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.habits-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+}
+
+.card img {
+  border-radius: 50%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 30px 0 5px 0;
+  font-weight: 700;
+}
+
+.card-subtitle {
+  color: var(--subtitle-text);
 }
 
 @media screen and (max-width: 576px) {
@@ -215,5 +251,14 @@ nav ul li:first-child {
   .free-video p,
   .tutorial-video p {
     font-size: 0.8rem;
+  }
+
+  /* Habits Section */
+  .habits-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin-bottom: 40px;
   }
 }
