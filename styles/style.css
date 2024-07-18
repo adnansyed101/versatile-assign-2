@@ -200,6 +200,24 @@ nav ul li:first-child {
   color: var(--subtitle-text);
 }
 
+/* Running Section */
+.running {
+  background-color: #222222;
+  padding: 30px 50px;
+  justify-content: space-between;
+  gap: 10rem;
+  border-radius: 1rem;
+}
+
+.running-info h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.running img {
+  border-radius: 1rem;
+}
+
 /* Small Screen */
 @media screen and (max-width: 576px) {
   button {
@@ -273,6 +291,22 @@ nav ul li:first-child {
 
   .card {
     margin-bottom: 40px;
+  }
+
+  /* Running */
+  .running {
+    flex-direction: column;
+    padding: 30px;
+    gap: 1rem;
+  }
+
+  .running h1 {
+    font-size: 2rem;
+  }
+
+  .running-info button{
+    display: block;
+    width: 100%;
   }
 }
 
