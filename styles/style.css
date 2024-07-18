@@ -105,6 +105,10 @@ nav ul li:first-child {
   gap: 10rem;
 }
 
+.banner-info {
+  width: 60%;
+}
+
 .banner-info h1 {
   font-size: 5rem;
   font-weight: 900;
@@ -196,6 +200,7 @@ nav ul li:first-child {
   color: var(--subtitle-text);
 }
 
+/* Small Screen */
 @media screen and (max-width: 576px) {
   button {
     padding: 10px 25px;
@@ -220,6 +225,10 @@ nav ul li:first-child {
   .banner {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .banner-info {
+    width: 100%;
   }
 
   .banner-info h1 {
@@ -254,11 +263,36 @@ nav ul li:first-child {
   }
 
   /* Habits Section */
+  #habits h2 {
+    font-size: 2rem;
+  }
+
   .habits-card-container {
     grid-template-columns: 1fr;
   }
 
   .card {
     margin-bottom: 40px;
+  }
+}
+
+/* Extra Small Screen */
+@media screen and (max-width: 350px) {
+  button {
+    padding: 10px;
+  }
+
+  .circle {
+    padding: 10px;
+  }
+
+  .free-video,
+  .tutorial-video {
+    padding: 10px 15px;
+  }
+
+  .tutorial-video {
+    bottom: 200px;
+    left: 0;
   }
 }
