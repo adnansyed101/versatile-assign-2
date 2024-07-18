@@ -7,6 +7,7 @@
 
 :root {
   --primary-color: #e6533c;
+  --subtitle-text: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -19,10 +20,20 @@
 
 body {
   background-color: black;
+  /* Need to delete later */
+  max-width: 1440px;
+  margin: 0 auto;
+  /* Don't put the above two lines in production */
 }
 
 li {
   list-style: none;
+}
+
+button {
+  padding: 16px 70px;
+  border-radius: 42px;
+  font-size: 1.25rem;
 }
 
 /* Shared Classes */
@@ -31,7 +42,18 @@ li {
 }
 
 .subtitle {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--subtitle-text);
+  margin: 28px 0;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.secondary-button {
+  background-color: black;
+  border: 1px solid white;
 }
 
 /* Header */
@@ -75,7 +97,76 @@ nav ul li:first-child {
   display: none;
 }
 
+/* Banner */
+.banner {
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.banner-info h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.banner-info h1 span {
+  font-family: Miama;
+  font-weight: 300;
+  font-size: 10rem;
+}
+
+.banner-img {
+  position: relative;
+}
+
+.free-video,
+.tutorial-video {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 24px;
+  border-radius: 1rem;
+}
+
+.free-video {
+  top: 125px;
+  right: -70px;
+}
+
+.free-video h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.tutorial-video {
+  bottom: 60px;
+  left: -110px;
+  gap: 20px;
+}
+
+.tutorial-video h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.free-video p,
+.tutorial-video p {
+  color: var(--subtitle-text);
+  text-wrap: nowrap;
+}
+
+.circle {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 15px;
+}
+
 @media screen and (max-width: 576px) {
+  button {
+    padding: 10px 25px;
+    border-radius: 42px;
+    font-size: 1rem;
+  }
+
   /* Header */
   header {
     width: 90%;
@@ -87,5 +178,42 @@ nav ul li:first-child {
 
   .bar-icon {
     display: block;
+  }
+
+  /* Banner */
+  .banner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .banner-info h1 {
+    font-size: 2.25rem;
+  }
+
+  .banner-info h1 span {
+    font-size: 5rem;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  .free-video {
+    top: 60px;
+    right: -12px;
+  }
+
+  .free-video h2 {
+    font-size: 1.5rem;
+  }
+
+  .tutorial-video {
+    bottom: 245px;
+    left: 0;
+  }
+
+  .free-video p,
+  .tutorial-video p {
+    font-size: 0.8rem;
   }
 }
