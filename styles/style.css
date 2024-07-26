@@ -70,7 +70,12 @@ button {
 
 /* Header */
 header {
-  margin: 2rem 0;
+  padding: 2rem 0;
+  background-image: linear-gradient(
+    rgba(17, 17, 17) 0%,
+    rgba(255, 255, 255, 0.13) 50%,
+    rgba(119, 119, 119, 0) 100%
+  );
 }
 
 /* Nav */
@@ -316,9 +321,8 @@ select {
 
 .sub-footer {
   text-align: center;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   color: var(--subtitle-text);
-
 }
 
 /* Small Screen */
@@ -454,7 +458,7 @@ select {
 /* Extra Small Screen */
 @media screen and (max-width: 370px) {
   button {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .free-video,
