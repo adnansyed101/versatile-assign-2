@@ -31,7 +31,7 @@ button {
 
 /* Shared Classes */
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -210,6 +210,55 @@ nav ul li:first-child {
   width: 100%;
 }
 
+/* BMI Calculator */
+#bmi-calculator {
+  margin-bottom: 6rem;
+}
+
+.bmi-calculator-title {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.bmi-calculator-content {
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 3.25rem 0;
+}
+
+.chart .title {
+  font-size: 1.75rem;
+  margin: 3.25rem 0;
+}
+
+.bmi-calculator-content table,
+.bmi-calculator-content td,
+.bmi-calculator-content th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  padding: 10px 30px;
+  text-align: left;
+}
+
+.calculator {
+  width: 50%;
+}
+
+.calculator .title {
+  font-size: 1.75rem;
+}
+
+input,
+select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 0.8rem 1.25rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin: 0.5rem;
+  color: var(--subtitle-text);
+}
+
 /* Teams Section */
 .our-team {
   text-align: center;
@@ -351,6 +400,39 @@ nav ul li:first-child {
   .running-info button {
     display: block;
     width: 100%;
+  }
+
+  /* BMI Calculator */
+  .bmi-calculator-title {
+    width: 100%;
+    padding-left: 0.5rem;
+  }
+
+  .bmi-calculator-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .chart .title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .calculator {
+    width: 100%;
+  }
+
+  .bmi-calculator-content table,
+  .bmi-calculator-content td,
+  .bmi-calculator-content th {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  input,
+  select {
+    margin: 0.3rem;
   }
 
   /* Our team */
