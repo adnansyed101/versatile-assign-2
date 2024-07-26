@@ -29,6 +29,16 @@ button {
   font-size: 1.25rem;
 }
 
+table,
+td,
+th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  padding: 10px 30px;
+  text-align: left;
+  color: var(--subtitle-text);
+}
+
 /* Shared Classes */
 .container {
   width: 85%;
@@ -215,6 +225,42 @@ nav ul li:first-child {
   width: 100%;
 }
 
+/* Diet Chart */
+#diet-chart {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.diet-info {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.diet-info img {
+  filter: grayscale(100%);
+}
+
+.diet-info table {
+  width: 60%;
+}
+
+.diet-info table,
+.diet-info td {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+}
+
+.diet-info tr > td:first-child {
+  color: white;
+  font-weight: 700;
+}
+
+.diet-info div img {
+  width: 100%;
+}
+
 /* BMI Calculator */
 #bmi-calculator {
   margin-bottom: 6rem;
@@ -236,13 +282,8 @@ nav ul li:first-child {
   margin: 3.25rem 0;
 }
 
-.bmi-calculator-content table,
-.bmi-calculator-content td,
 .bmi-calculator-content th {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-collapse: collapse;
-  padding: 10px 30px;
-  text-align: left;
+  color: white;
 }
 
 .calculator {
@@ -406,6 +447,16 @@ select {
 
   .running-info button {
     display: block;
+    width: 100%;
+  }
+
+  /* Diet Section */
+  .diet-info {
+    flex-direction: column-reverse;
+  }
+
+  .diet-info table {
+    font-size: 0.8rem;
     width: 100%;
   }
 
