@@ -316,12 +316,15 @@ select {
 
 .sub-footer {
   text-align: center;
+  padding: .5rem 0;
+  color: var(--subtitle-text);
+
 }
 
 /* Small Screen */
 @media screen and (max-width: 576px) {
   button {
-    padding: 10px 17px;
+    padding: 10px 20px;
     border-radius: 42px;
     font-size: 1rem;
   }
@@ -450,6 +453,10 @@ select {
 
 /* Extra Small Screen */
 @media screen and (max-width: 370px) {
+  button {
+    font-size: .8rem;
+  }
+
   .free-video,
   .tutorial-video {
     padding: 10px 15px;
