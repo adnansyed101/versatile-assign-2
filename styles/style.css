@@ -30,6 +30,11 @@ button {
   cursor: pointer;
 }
 
+button:hover{
+   scale: 1.1;
+  transition: 0.5s;
+}
+
 table,
 td,
 th {
@@ -67,11 +72,6 @@ nav li {
 .primary-button {
   background-color: var(--primary-color);
   border: none;
-}
-
-.primary-button:hover {
-  scale: 1.1;
-  transition: 0.5s;
 }
 
 .secondary-button {
@@ -138,6 +138,10 @@ nav ul li:first-child {
 
 .banner-info {
   width: 60%;
+}
+
+.button-container {
+  gap: 1rem;
 }
 
 .banner-info h1 {
@@ -421,6 +425,7 @@ select {
 
   .button-container {
     text-align: center;
+    gap: .5rem;
   }
 
   .free-video {
